@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{post.title}}</title>
+</head>
+<body>
+<a href="{% url 'blog-blog_posts'%}">Retour au sommaire
+  <h1>{{post.title}}</h1>
+  <h1>{{post.content|truncatewords:50|striptags}}</h1>
+</a>
+
+
+
+</body>
+</html>
